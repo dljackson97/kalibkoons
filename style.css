@@ -723,6 +723,7 @@ p { color: var(--text-muted); line-height: 1.8; }
 .service-section__logo--stacked { height: 88px; }
 .service-section__text p { margin-bottom: 14px; }
 .service-list { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+.service-section__text .btn { margin-top: 36px; }
 .service-list li {
   display: flex;
   align-items: flex-start;
