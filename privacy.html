@@ -10,21 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css?v=6">
-  <style>
-    .legal-body { max-width: 740px; margin: 0 auto; padding: 80px 40px 120px; }
-    .legal-body h2 { font-family: var(--font-body); font-size: 18px; font-weight: 700; color: var(--text); margin: 44px 0 10px; letter-spacing: -0.01em; }
-    .legal-body p { font-size: 15px; color: var(--text-muted); line-height: 1.85; margin-bottom: 14px; }
-    .legal-body ul { padding-left: 20px; margin-bottom: 16px; }
-    .legal-body ul li { font-size: 15px; color: var(--text-muted); line-height: 1.8; margin-bottom: 6px; }
-    .legal-meta { font-family: var(--font-accent); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); display: block; margin-bottom: 36px; }
-  </style>
 </head>
 <body>
 
   <nav class="nav scrolled" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo"><img src="images/logos/koons-real-estate-icon.png?v=2" alt="Koons Real Estate" class="nav__logo-img">KALIB <span>KOONS</span></a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+      <button type="button" class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
@@ -38,10 +30,10 @@
     </div>
   </nav>
 
-  <div style="padding-top: var(--nav-height);">
+  <div class="legal-page">
     <div class="legal-body">
-      <span class="label" style="margin-top: 48px; display: block;">Legal</span>
-      <h1 style="font-size: clamp(48px, 7vw, 80px); line-height: 0.92; margin-bottom: 20px;">PRIVACY<br>POLICY</h1>
+      <span class="label">Legal</span>
+      <h1>PRIVACY<br>POLICY</h1>
       <span class="legal-meta">Effective Date: January 1, 2025 &nbsp;·&nbsp; Governing Law: State of Florida</span>
 
       <p>This Privacy Policy explains how Kalib Koons ("we," "us," or "our") collects, uses, discloses, and safeguards information obtained through kalibkoons.com (the "Site"). By using this Site, you consent to the practices described in this policy. If you do not agree, please discontinue use of the Site.</p>
@@ -89,7 +81,7 @@
         <li>Request deletion of your information (subject to legal retention requirements noted above)</li>
         <li>Opt out of future communications unrelated to an active inquiry or transaction</li>
       </ul>
-      <p>To exercise these rights, contact us at <a href="mailto:kalib@kalibkoons.com" style="color: var(--text); text-decoration: underline;">kalib@kalibkoons.com</a> or <a href="tel:2182326595" style="color: var(--text); text-decoration: underline;">218-232-6595</a>. We will respond within a reasonable time.</p>
+      <p class="legal-rights-contact">To exercise these rights, contact us at <a href="mailto:kalib@kalibkoons.com">kalib@kalibkoons.com</a> or <a href="tel:2182326595">218-232-6595</a>. We will respond within a reasonable time.</p>
 
       <h2>Children's Privacy</h2>
       <p>This Site is not directed to individuals under the age of 18. We do not knowingly collect personal information from minors. If you believe a minor has submitted information through this Site, contact us immediately and we will promptly delete it.</p>
@@ -99,11 +91,11 @@
 
       <h2>Contact</h2>
       <p>Questions or concerns about this Privacy Policy should be directed to:</p>
-      <p style="color: var(--text); font-size: 15px; line-height: 1.9;">
+      <p class="legal-contact">
         Kalib Koons<br>
         Saint Petersburg, FL<br>
-        <a href="mailto:kalib@kalibkoons.com" style="color: var(--text);">kalib@kalibkoons.com</a><br>
-        <a href="tel:2182326595" style="color: var(--text);">218-232-6595</a>
+        <a href="mailto:kalib@kalibkoons.com">kalib@kalibkoons.com</a><br>
+        <a href="tel:2182326595">218-232-6595</a>
       </p>
     </div>
   </div>

@@ -28,7 +28,7 @@
   <nav class="nav scrolled" id="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo"><img src="images/logos/koons-real-estate-icon.png?v=2" alt="Koons Real Estate" class="nav__logo-img">KALIB <span>KOONS</span></a>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+      <button type="button" class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
@@ -111,9 +111,9 @@
               action="https://api.web3forms.com/submit"
               method="POST"
             >
-              <input type="hidden" name="access_key" value="[WEB3FORMS_ACCESS_KEY]">
+              <input type="hidden" name="access_key" value="6dc4f944-621a-4bf6-8ea0-68d8e0a5f673">
               <input type="hidden" name="subject" value="New inquiry from kalibkoons.com">
-              <input type="text" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+              <input type="text" name="botcheck" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
               <div class="form-row">
                 <div class="form-group">
@@ -132,7 +132,7 @@
                   <input type="email" id="email" name="email" placeholder="john@example.com" required>
                 </div>
                 <div class="form-group">
-                  <label for="phone">Phone <span style="font-weight:400; opacity:0.6;">(optional)</span></label>
+                  <label for="phone">Phone <span class="form-optional-hint">(optional)</span></label>
                   <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
                 </div>
               </div>
@@ -154,13 +154,13 @@
                 <textarea id="message" name="message" placeholder="Give me the short version — deal size, timeline, what you're trying to figure out. Or just say hi." required></textarea>
               </div>
 
-              <button type="submit" class="btn btn--primary" style="width: 100%; text-align: center;">Send My Note</button>
+              <button type="submit" class="btn btn--primary btn--block">Send My Note</button>
               <p class="contact-form-note">No commitment. Kalib responds within 24 hours.</p>
             </form>
 
-            <div id="form-success" hidden style="text-align: center; padding: 48px 0;">
-              <p style="font-family: var(--font-display); font-size: 40px; color: var(--text); margin-bottom: 14px; line-height: 1;">YOU'RE IN<br>GOOD HANDS</p>
-              <p style="color: var(--text-muted); font-size: 15px; line-height: 1.75;">Thanks for reaching out. Kalib will be in touch personally within 24 hours.</p>
+            <div id="form-success" hidden class="form-success">
+              <p class="form-success__title">YOU'RE IN<br>GOOD HANDS</p>
+              <p class="form-success__subtitle">Thanks for reaching out. Kalib will be in touch personally within 24 hours.</p>
             </div>
           </div>
         </div>
