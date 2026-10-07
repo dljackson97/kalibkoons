@@ -164,36 +164,32 @@
   </section>
 
   <!-- ACTIVE LISTINGS -->
-  <section class="section listings-preview" hidden>
+  <section class="section listings-preview">
     <div class="container">
       <span class="label reveal">Current Opportunities</span>
       <div class="listings-header reveal">
         <h2 class="section-title">Active Listings</h2>
         <a href="contact.html" class="btn btn--outline">Inquire About Listings</a>
       </div>
-      <div class="listings-grid" id="listingsGrid"></div>
-      <p class="listings-note reveal">Listings updated as new opportunities become available. Contact Kalib directly for off-market deals and pocket listings.</p>
+      <div class="listing-links">
+        <a href="https://www.crexi.com/properties" class="listing-link reveal" target="_blank" rel="noopener">
+          <span class="listing-link__index">01</span>
+          <p class="listing-card__type">Sale &amp; Lease</p>
+          <h3 class="listing-link__title">Commercial Listings</h3>
+          <p class="listing-link__desc">Retail, strip center, warehouse, light industrial, and multifamily opportunities across Pinellas County.</p>
+          <span class="btn--text listing-link__cta">View on Crexi <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a href="https://www.zillow.com/st-petersburg-fl/rentals/" class="listing-link reveal" target="_blank" rel="noopener">
+          <span class="listing-link__index">02</span>
+          <p class="listing-card__type">For Rent</p>
+          <h3 class="listing-link__title">Rental Listings</h3>
+          <p class="listing-link__desc">Available units from the Koons Real Estate property management portfolio.</p>
+          <span class="btn--text listing-link__cta">View on Zillow <span aria-hidden="true">&rarr;</span></span>
+        </a>
+      </div>
+      <p class="listings-note reveal">Contact Kalib directly for off-market deals and pocket listings.</p>
     </div>
   </section>
-
-  <!-- LISTING DETAIL MODAL -->
-  <div class="listing-modal" id="listingModal" aria-hidden="true">
-    <div class="listing-modal__overlay" id="listingModalOverlay"></div>
-    <div class="listing-modal__panel" role="dialog" aria-modal="true" aria-labelledby="listingModalTitle">
-      <button class="listing-modal__close" id="listingModalClose" aria-label="Close">&times;</button>
-      <div class="listing-modal__image">
-        <img id="listingModalImage" src="" alt="">
-        <span class="listing-badge" id="listingModalBadge">Available</span>
-      </div>
-      <div class="listing-modal__body">
-        <p class="listing-card__type" id="listingModalType">Commercial Lease</p>
-        <h3 id="listingModalTitle">Address</h3>
-        <div class="listing-card__stats" id="listingModalStats"></div>
-        <p class="listing-modal__desc" id="listingModalDesc"></p>
-        <a href="contact.html#form" class="btn btn--primary">Contact Kalib About This Listing</a>
-      </div>
-    </div>
-  </div>
 
   <!-- TESTIMONIALS -->
   <section class="section testimonials">
@@ -247,7 +243,6 @@
     </div>
   </footer>
 
-  <script src="listings-data.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
