@@ -462,7 +462,7 @@ p { color: var(--text-muted); line-height: 1.8; }
 .listing-link {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  overflow: hidden;
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   background: var(--bg-surface);
@@ -474,12 +474,19 @@ p { color: var(--text-muted); line-height: 1.8; }
   box-shadow: 0 8px 32px rgba(0,0,0,0.08);
   transform: translateY(-3px);
 }
-.listing-link__index {
-  font-family: var(--font-display);
-  font-size: 48px;
-  line-height: 1;
-  color: var(--border);
-  margin-bottom: 24px;
+.listing-link__image { overflow: hidden; }
+.listing-link__image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.listing-link:hover .listing-link__image img { transform: scale(1.04); }
+.listing-link__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 36px 40px 40px;
 }
 .listing-link__title {
   font-family: var(--font-display);
@@ -1317,7 +1324,7 @@ p { color: var(--text-muted); line-height: 1.8; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .listings-grid { grid-template-columns: 1fr; }
   .listing-links { grid-template-columns: 1fr; }
-  .listing-link { padding: 28px; }
+  .listing-link__body { padding: 24px 28px 28px; }
   .cta-banner__inner { flex-direction: column; text-align: center; }
   .footer__main { grid-template-columns: 1fr; grid-template-areas: "brand" "social" "tagline"; gap: 14px; }
   .footer__logo { font-size: 20px; white-space: nowrap; }
